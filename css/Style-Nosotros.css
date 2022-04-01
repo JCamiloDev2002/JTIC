@@ -1,0 +1,152 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.Restaurante-Historia {
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    background-color: transparent;
+}
+
+.Img-Historia {
+    width: 50%;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.Img-Historia img {
+    width: 90%;
+    background-size: cover;
+    height: auto;
+    border-radius: 20px;
+    box-shadow:  20px 20px 60px #505355;
+    max-width: 100%;
+}
+
+.Texto-historia {
+    width: 50%;
+    margin-top: 4rem;
+}
+
+.Texto-historia h1 {
+    text-align: center;
+    font-family:Impact;
+    color: rgb(168, 98, 6);
+}
+
+.Texto-historia h1 span {
+    font-size: 3rem;
+    color: rgb(58, 28, 6);
+}
+
+.Texto-historia p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*empleados css*/
+
+.empleados {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+
+}
+
+.Trabajador {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+
+.Trabajador img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 150px;
+    margin-bottom: 1rem;
+    border: thick double black;
+}
+
+.Trabajador h3,h6 {
+    text-align: center;
+}
+
+.Trabajador h3 {
+    font-size: 1.5rem;
+    text-emphasis: '.';
+    -webkit-text-emphasis: '.';
+}
+
+.Carrusel {
+    background-color: transparent;
+}
+
+.Carrusel-interno {
+    padding: 1rem;
+}
+
+.Carrusel-interno h6 {
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+.Carrusel-text-img {
+    display: flex;
+    text-align: center;
+}
+
+.Testimonio-img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 150px;
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+}
+
+.comillas {
+    font-size: 2rem;
+}
+
+
+/*SERVICIOS*/
+
+.titulos {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+
+}
+
+.titulos h1 {
+    color: rgb(104, 3, 3);
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titulos p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Contenido {
+    padding: 3rem;
+}
+
+.Contenido h1 {
+    font-size: 1.5rem;
+    color: rgb(104, 3, 3);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Contenido p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Imagen-servicio {
+    height: 100%
+}

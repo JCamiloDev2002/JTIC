@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script language="JavaScript1.2">
+        function UpdateCartQuantity() {
+            document.cart_quantity.submit();
+        }
+        
+        function changeQuantity(qty) {
+            document.cart_quantity['quantity'].value = Number(document.cart_quantity['quantity'].value)+Number(qty);
+            UpdateCartQuantity();
+        }
+    </script>
+
+    <title>MENÚ</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <h1>MENÚ</h1>
+                </div>
+                <div class="four columns u-pull-right">
+                    <ul>
+                        <li class="submenu" style="display: flex; flex-direction: row; text-align: end;">
+                            <a href="img/menusys.pdf" class="button u-full-width" download="MENÚSAL&SALSA" style="margin-right: 2rem;"> DESCARGAR MENÚ </a>
+                            <a href="carrito.html" class="button btn-secondary" style="margin-right: 2rem;"><i class="fas fa-shopping-cart" style="width: 10rem; height: 10rem; font-size: 2rem;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container"> 
+            <div class="row">  
+                <div class="eight columns">
+                    <div class="contenido-hero">
+                        <h2>Sabores exóticos de la selva colombiana</h2>
+                        <p>Todos serán maravillosos al degustarlos</p>
+                        <form>
+                            <input class="u-full-width" type="text" placeholder="¿Qué te gustaría probar?" id="buscador">
+                            <input type="submit" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p> Platillos diferentes<br>
+                    Explora los nuevos platillos</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p>Chefs expertos<br>
+                    Prueba las nuevas combinaciones</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p>Alimentación saludable<br>
+                    Nosotros cuidamos tu bienestar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="Lista-platillos" class="container">
+        <h1 class="encabezado">...Nuestro menú...</h1>
+
+        <div class="row">
+            <div class="four columns">
+                <div id="card-0" class="card">
+                    <img src="img/7329e-bagre_en_salsa.jpg" class="imagen-7329e-bagre_en_salsa u-full-width">
+                    <div class="info-card" style="text-align: center;">
+                        <h4 class="nombre">BAGRE EN SALSA</h4>
+                        <p>Región Atlántica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p>
+                        <h6 class="text">Precio: $<span>25000</span></h6>
+                        <button id="btnAñadir-0" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>                          
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div id="card-1" class="card">
+                    <img src="img/crunchy-peruvian-fish.jpg" class="imagen-crunchy-peruvian-fish u-full-width">
+                    <div class="info-card" style="text-align: center;">
+                        <h4 class="nombre">CRUNCHY</h4>
+                        <p style="font-family: im;" >Región Amazónica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p>
+                        <h6 class="text">Precio: $<span>28000</span></h6>
+                        <button id="btnAñadir-1" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>                                              
+                    </div>
+
+                </div>
+            </div>
+                    <div class="four columns">
+                        <div id="card-2" class="card">
+                            <img src="img/co_mde_bandeja_paisa-1920x1080.jpg" class="imagen-co_mde_bandeja_paisa-1920x1080 u-full-width">
+                            <div class="info-card" style="text-align: center;">
+                                <h4 class="nombre">BANDEJA PAISA</h4>
+                                <p>Región Andina</p>
+                                <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                    nisi soluta deserunt facilis pariatur accusantium corporis
+                                    laudantium odit culpa quae illo laborum error quos.</i>
+                                </p>
+                                <h6 class="text">Precio: $<span>35000</span></h6>
+                                <button id="btnAñadir-2" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>    
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+        <div class="row filas">
+            <div class="four columns">
+                <div id="card-3" class="card">
+                    <img src="img/dumplings-1492.jpg" class="imagen-dumplings-1492 u-full-width">
+                    <div class="info-card" style="text-align: center">
+                        <h4 class="nombre">DUMPLINGS</h4>
+                        <p>Región Pacífica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p> 
+                        <h6 class="text">Precio: $<span class="precio">20000</span></h6>
+                        <button id="btnAñadir-3" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>  
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div id="card-4" class="card">
+                    <img src="img/albondigas de cangrejo.jpg" class="imagen-albondigas de cangrejo u-full-width">
+                    <div class="info-card" style="text-align: center">
+                        <h4 class="nombre">ALBONDIGAS DE CANGREJO</h4>
+                        <p>Región Caribe</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p>
+                        <h6 class="text">Precio: $<span>25000</span></h6>
+                        <button id="btnAñadir-4" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>  
+                    </div>  
+                </div>
+            </div>
+            <div class="four columns">
+                <div id="card-5" class="card">
+                    <img src="img/arroz-llanero" class="imagen-arroz-llanero u-full-width">
+                    <div class="info-card" style="text-align: center">
+                        <h4 class="nombre">ARROZ LLANERO</h4>
+                        <p>Región Orinoquía</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p>
+                        <h6 class="text">Precio: $<span>15000</span></h6>
+                        <button id="btnAñadir-5" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row filas">
+            <div class="four columns">
+                <div id="card-6" class="card">
+                    <img src="img/cachama.jpg" class="imagen-cachama u-full-width">
+                    <div class="info-card" style="text-align: center">
+                        <h4 class="nombre">CACHAMA</h4>
+                        <p>Región Caribe</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p>
+                        <h6 class="text">Precio: $<span>32000</span></h6>
+                        <button id="btnAñadir-6" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>   
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div id="card-7" class="card">
+                    <img src="img/caponde-ahuyama-receta.jpg" class="imagen-caponde-ahuyama-receta u-full-width">
+                    <div class="info-card" style="text-align: center">
+                        <h4 class="nombre">CAPÓN DE AHUYAMA</h4>
+                        <p>Región Andina</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p>
+                        <h6 class="text">Precio: $<span>20000</span></h6>
+                        <button id="btnAñadir-7" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>                      
+                   </div>
+                </div>
+            </div>
+                   <div class="four columns">
+                <div id="card-8" class="card">
+                    <img src="img/caracol.jpg" class="imagen-caracol u-full-width">
+                    <div class="info-card" style="text-align: center">
+                        <h4 class="nombre">CARACOLES EN SALSA</h4>
+                        <p>Región Insular</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos,
+                            lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
+                        </p>
+                        <h6 class="text">Precio: $<span>45000</span></h6>
+                        <button id="btnAñadir-8" type="button" class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row filas">
+            <div class="four columns">
+                <div id="card-9" class="card">
+                    <img src="img/carne-perra.jpg" class="imagen-carne-perra u-full-width">
+                    <div class="info-card" style="text-align: center">
+                        <h4 class="nombre">CARNE EN PERRA</h4>
+                        <p>Región Orinoquía</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p>
+                        <h6 class="text">Precio: $<span>25000</span></h6>
+                        <button id="btnAñadir-9" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>  
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div id="card-10" class="card">
+                    <img src="img/Grenada-crabback.jpg" class="imagen-Grenada-crabback u-full-width">
+                    <div class="info-card" style="text-align: center">
+                        <h4 class="nombre">CRABBACK</h4>
+                        <p>Región Pacífica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p>
+                        <h6 class="text">Precio: $<span>45000</span></h6>
+                        <button id="btnAñadir-10" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>  
+                    </div>  
+                </div>
+            </div>
+            <div class="four columns">
+                <div id="card-11" class="card">
+                    <img src="img/arroz-coco.jpg" class="imagen-arroz-coco u-full-width">
+                    <div class="info-card" style="text-align: center">
+                        <h4 class="nombre">ARROZ DE COCO</h4>
+                        <p>Región Caribe y Pacífica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i>
+                        </p>
+                        
+                        <h6 class="text">Precio: $<span>15000</span></h6>
+                        <button id="btnAñadir-11" type="button"  class="btn btn-danger btnAnadir" style="background-color: maroon;">Añadir al carrito</button>   
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+
+   <div>
+       
+    <ul class="pagination pagination-lg justify-content-center " style="margin:20px 0">
+        <li class="page-item"><a class="page-link vinotinto_text" href="meals.html">Previous</a></li>
+        <li class="page-item disabled"><a class="page-link vinotinto_text" href="menua copy.html">1</a></li>
+        <li class="page-item"><a class="page-link vinotinto_text" href="menub copy.html">2</a></li>
+        <li class="page-item"><a class="page-link vinotinto_text" href="menuc copy.html">3</a></li>
+       <li class="page-item"><a class="page-link vinotinto_text" href="menud copy.html">Next</a></li>
+    </ul>
+       
+   </div> 
+
+   
+   <footer style="background-color: rgb(75, 14, 14)">
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="img/logo@2x.png" class="rounded h-100 w-100" />
+        </div>
+        <div class="container col-sm-4 ">
+          <a class="mt-3 mr-3 text-white d-inline-block" href="mapadelsitio.html">
+            MAPA DEL SITIO
+          </a>
+          <a class="mt-3 mr-3 text-white d-inline-block" href="contacto.html">CONTACTANOS</a>
+          <a class="mt-3 mr-3 text-white d-inline-block" href="reserva.html">RESERVAS</a>
+          <div class="text-white">
+            <address class="align-text-bottom">
+              <br />
+              Restaurante Sal y Salsa Ltda<br />
+              Calle 100 N° 100-100, Bogota<br />
+              Reservas@salysalsa.com<br />
+              3219876541<br /><br />
+              © Copyright 2020.
+            </address>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15836.233746791158!2d-73.11714779113763!3d7.119226807143491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1631562274241!5m2!1ses!2sco"
+            width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="js/scri0ptsmenu.js"></script> -->
+  <script src="./js/menu.js"></script>
+</body>
+</html>

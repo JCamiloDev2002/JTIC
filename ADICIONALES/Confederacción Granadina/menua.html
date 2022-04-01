@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>MENÚ</title>
+    <link rel="stylesheet" href="DESING/normalize.css">
+    <link rel="stylesheet" href="DESING/skeleton.css">
+    <link rel="stylesheet" href="DESING/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <h1>MENÚ</h1>
+                </div>
+                <div class="four columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <a href="IMAGES/menusys.pdf" class="button u-full-width" download="MENÚSAL&SALSA"> DESCARGAR MENÚ  </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container"> 
+            <div class="row">  
+                <div class="eight columns">
+                    <div class="contenido-hero">
+                        <h2>Sabores exóticos de la selva colombiana</h2>
+                        <p>Todos serán maravillosos al degustarlos</p>
+                        <form>
+                            <input class="u-full-width" type="text" placeholder="¿Qué te gustaría probar?" id="buscador">
+                            <input type="submit" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p> Platillos diferentes<br>
+                    Explora los nuevos platillos</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p>Chefs expertos<br>
+                    Prueba las nuevas combinaciones</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p>Alimentación saludable<br>
+                    Nosotros cuidamos tu bienestar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="Lista-platillos" class="container">
+        <h1 class="encabezado">...Nuestro menú...</h1>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/7329e-bagre_en_salsa.jpg" class="imagen-7329e-bagre_en_salsa u-full-width">
+                    <div class="info-card">
+                        <h4>BAGRE EN SALSA</h4>
+                        <p>Región Atlántica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                            
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDbagresalsa">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDbagresalsa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Bagre en salsa</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>BAGRE EN SALSA</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%; "src="IMAGES/7329e-bagre_en_salsa.jpg"
+                                                        class="imagen-7329e-bagre_en_salsa" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>  
+                                </div>    
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/crunchy-peruvian-fish.jpg" class="imagen-crunchy-peruvian-fish u-full-width">
+                    <div class="info-card">
+                        <h4>CRUNCHY</h4>
+                        <p>Región Amazónica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDcrunchy">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDcrunchy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Crunchy</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+
+                                            <article>
+                                               <h2 style="text-align: center; color: maroon;"><b>CRUNCHY</b></h2>
+                                                   <img clas="modal-image" style="max-width: 100%;"src="IMAGES/crunchy-peruvian-fish.jpg"
+                                                       class="imagen-crunchy-peruvian-fish" width="500" height="300"
+                                                       alt="Bagre en salsa">
+                                               <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                   <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>        
+                                </div>
+                            </div>    
+                        </div>                    
+                                          
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/co_mde_bandeja_paisa-1920x1080.jpg" class="imagen-co_mde_bandeja_paisa-1920x1080 u-full-width">
+                    <div class="info-card">
+                        <h4>BANDEJA PAISA</h4>
+                        <p>Región Andina</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDbandejap">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDbandejap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Bandeja Paisa</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>BANDEJA PAISA</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/co_mde_bandeja_paisa-1920x1080.jpg"
+                                                        class="imagen-co_mde_bandeja_paisa-1920x1080" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/dumplings-1492.jpg" class="imagen-dumplings-1492 u-full-width">
+                    <div class="info-card">
+                        <h4>DUMPLINGS</h4>
+                        <p>Región Pacífica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDdumplings">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDdumplings" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Dumplings</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>DUMPLINGS</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/dumplings-1492.jpg"
+                                                        class="imagen-dumplings-1492" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/albondigas de cangrejo.jpg" class="imagen-albondigas de cangrejo u-full-width">
+                    <div class="info-card">
+                        <h4>ALBONDIGAS DE CANGREJO</h4>
+                        <p>Región Caribe</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDalbondigasc">
+                            saber más
+                        </button> 
+                        <div class="modal fade" id="modalDalbondigasc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Albondigas de Cangrejo</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>ALBONDIGAS DE CANGREJO</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/albondigas de cangrejo.jpg"
+                                                        class="imagen-albondigas de cangrejo" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/arroz-llanero" class="imagen-arroz-llanero u-full-width">
+                    <div class="info-card">
+                        <h4>ARROZ LLANERO</h4>
+                        <p>Región Orinoquía</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDarrozll">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDarrozll" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Arroz llanero</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>ARROZ LLANERO</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/arroz-llanero"
+                                                        class="imagen-arroz-llanero" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/cachama.jpg" class="imagen-cachama u-full-width">
+                    <div class="info-card">
+                        <h4>CACHAMA</h4>
+                        <p>Región Caribe</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDcachama">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDcachama" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Cachama</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>CACHAMA</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/cachama.jpg"
+                                                        class="imagen-cachama" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/caponde-ahuyama-receta.jpg" class="imagen-caponde-ahuyama-receta u-full-width">
+                    <div class="info-card">
+                        <h4>CAPÓN DE AHUYAMA</h4>
+                        <p>Región Andina</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDcapona">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDcapona" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Capón de ahuyama</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>CAPÓN DE AHUYAMA</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/caponde-ahuyama-receta.jpg"
+                                                        class="imagen-caponde-ahuyama-receta" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>                   
+                               
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/caracol.jpg" class="imagen-caracol u-full-width">
+                    <div class="info-card">
+                        <h4>CARACOLES EN SALSA</h4>
+                        <p>Región Insular</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos,
+                            lorem ipsum dolor sit amet consectetur adipisicing elit.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                           data-toggle="modal"
+                           data-target="#modalDcaracol">
+                           saber más
+                        </button>
+                        <div class="modal fade" id="modalDcaracol" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Caracoles en salsa</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>CARACOLES EN SALSA</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/caracol.jpg" 
+                                                        class="imagen-caracol" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>   
+                                </div>  
+                            </div>         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/carne-perra.jpg" class="imagen-carne-perra u-full-width">
+                    <div class="info-card">
+                        <h4>CARNE EN PERRA</h4>
+                        <p>Región Orinoquía</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDcarnep">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDcarnep" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Carne en perra</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>CARNE EN PERRA</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/carne-perra.jpg"
+                                                        class="imagen-carne-perra" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/Grenada-crabback.jpg" class="imagen-Grenada-crabback u-full-width">
+                    <div class="info-card">
+                        <h4>CRABBACK</h4>
+                        <p>Región Pacífica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDcrabback">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDcrabback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Crabback</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>CRABBACK</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/Grenada-crabback.jpg"
+                                                        class="imagen-Grenada-crabback" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="IMAGES/arroz-coco.jpg" class="imagen-arroz-coco u-full-width">
+                    <div class="info-card">
+                        <h4>ARROZ DE COCO</h4>
+                        <p>Región Caribe y Pacífica</p>
+                        <p style="text-align: justify;"><i> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus possimus, labore, odio fugit quaerat, voluptatum 
+                            nisi soluta deserunt facilis pariatur accusantium corporis
+                            laudantium odit culpa quae illo laborum error quos.</i></p>
+                        <button type="button" class=" button-primary u-full-width button agregar-carrito"
+                            data-toggle="modal"
+                            data-target="#modalDarrozc">
+                            saber más
+                        </button>
+                        <div class="modal fade" id="modalDarrozc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: sienna; text-align: left;">sal&salsa-Arroz de Coco</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                        <div class="modal-body">
+                                            <article>
+                                                <h2 style="text-align: center; color: maroon;"><b>ARROZ DE COCO</b></h2>
+                                                    <img clas="modal-image" style="max-width: 100%;"src="IMAGES/arroz-coco.jpg"
+                                                        class="imagen-arroz-coco" width="500" height="300"
+                                                        alt="Bagre en salsa">
+                                                <h3 style="text-align: center; color:rgb(66, 29, 17);">...Descripción...</h3>
+                                                    <p class="descripcion-modal" style="text-align: justify; color: black;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit 
+                                                        Minus possimus, labore, odio fugit quaerat, voluptatum 
+                                                        nisi soluta deserunt facilis pariatur accusantium corporis
+                                                        laudantium odit culpa quae illo laborum error quos.</p>
+
+                                            </article>
+                                        </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+
+   <div>
+       <ul class="pagination pagination-lg justify-content-center" style="margin:20px 0">
+          <li class="page-item"><a class="page-link" href="meals.html">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="menua.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="menub.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="menuc.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="menud.html">Next</a></li>
+       </ul>
+   </div> 
+
+</body>
+</html>
